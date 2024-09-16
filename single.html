@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>The Importance of Clean Code - Ben Durham</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<h1><a href="index.html">Ben Durham</a></h1>
+				<nav class="links">
+					<ul>
+						<li><a href="#" class="menu-link" data-section="#home">Home</a></li>
+						<li><a href="#" class="menu-link" data-section="#about">About</a></li>
+						<li><a href="#" class="menu-link" data-section="#skills">Skills</a></li>
+						<li><a href="#" class="menu-link" data-section="#projects">Projects</a></li>
+						<li><a href="#" class="menu-link" data-section="#contact">Contact</a></li>
+					</ul>
+				</nav>
+				<nav class="main">
+					<ul>
+						<li class="menu">
+							<a class="fa-bars" href="#menu">Menu</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+			<div id="main">
+
+				<!-- Post -->
+				<article class="post">
+					<header>
+						<div class="title">
+							<h2><a href="#">The Importance of Clean Code</a></h2>
+							<p>Why writing clean, maintainable code is critical for success as a developer</p>
+						</div>
+						<div class="meta">
+							<time class="published" datetime="2024-01-01">January 1, 2024</time>
+							<a href="#" class="author"><span class="name">Ben Durham</span><img src="images/avatar.jpg" alt="" /></a>
+						</div>
+					</header>
+					<span class="image featured"><img src="images/pic01.jpg" alt="Clean Code" /></span>
+					<p>As developers, we often focus on writing code that works. However, code that simply works isn't enough—it's equally important to write clean, maintainable, and readable code. Clean code is a foundation for building scalable and long-lasting software applications, and it directly impacts the development team's ability to iterate, debug, and enhance applications over time.</p>
+					<p>Here are some key principles of clean code:</p>
+
+					<h3>1. Simplicity and Readability</h3>
+					<p>The primary goal of clean code is to make it easy to understand for other developers and even your future self. Using clear variable names, logical structures, and comments (where necessary) can drastically improve readability. Simpler code is easier to maintain and debug, leading to fewer bugs and faster development cycles.</p>
+
+					<h3>2. DRY Principle (Don't Repeat Yourself)</h3>
+					<p>Clean code follows the DRY principle, which encourages developers to avoid duplicating code. By keeping your code modular and reusing components and functions, you reduce redundancy and ensure that future changes are easier to manage.</p>
+
+					<h3>3. Proper Use of Comments</h3>
+					<p>Comments should not be used to explain what the code is doing—that should be clear from the code itself. Instead, comments should provide additional context, such as why certain decisions were made or what a function is intended to accomplish.</p>
+
+					<h3>4. Consistent Naming Conventions</h3>
+					<p>Consistent naming conventions make it easier for teams to collaborate on a codebase. Use descriptive names for variables, functions, and classes to ensure they accurately represent the data or behavior they encapsulate.</p>
+
+					<h3>5. Proper Error Handling</h3>
+					<p>Errors are inevitable, but how we handle them defines the reliability of our software. Clean code includes proper error handling mechanisms, making sure the application doesn't crash unexpectedly and provides helpful feedback to users and developers.</p>
+
+					<p>At its core, clean code is about making your codebase more resilient and scalable. It's a practice that not only improves the quality of the software you're building but also enhances collaboration and future-proofing, allowing developers to build upon their work with confidence.</p>
+
+					<footer>
+						<ul class="stats">
+							<li><a href="#">Top of Page</a></li>
+						</ul>
+					</footer>
+				</article>
+
+			</div>
+
+			<!-- Footer -->
+			<section id="footer">
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/thebendurham/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/oorazugoku" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="mailto:bendurham.business@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+			</section>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+
+		<script>
+			// Get all the menu links
+			document.querySelectorAll('.menu-link').forEach(link => {
+				link.addEventListener('click', function(event) {
+					event.preventDefault();
+					// Get the target section (data-section attribute)
+					const targetSection = this.getAttribute('data-section');
+					// Redirect to index.html and pass the target section as a hash
+					window.location.href = `/index.html${targetSection}`;
+				});
+			});
+		</script>
+
+	</body>
+</html>
